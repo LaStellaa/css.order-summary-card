@@ -1,0 +1,135 @@
+:root {
+    /*colors*/
+    --main-background: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    /*font family*/
+    --ff-primary: "Red Hat Display", sans-serif;
+    
+    /*font weight*/
+    --fw-normal: 500;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+}
+
+main {
+    background-image: url(./images/pattern-background-desktop.svg);
+}
+
+* {
+    font-family: var(--ff-primary);
+}
+
+body {
+    background-color: var(--main-background);
+}
+
+.card {
+    margin: auto;
+    border-radius: 4%;
+    height: 80vh !important;
+    
+}
+
+.card-img-top {
+    border-top-left-radius: 4%;
+    border-top-left-radius: 4%;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.card-body, .card-plan {
+    text-align: center;
+}
+
+h5 {
+    color: var(--dark-blue);
+    font-weight: var(--fw-bolder);
+    padding-top: 1.3rem;
+}
+
+p {
+    color: var(--desaturated-blue);
+    font-weight: var(--fw-normal);
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 16px;
+    padding-top: .5rem;
+}
+
+.card-plan {
+    background-color: var(--very-pale-blue);
+    border-radius: 11px;
+    margin: -0px 17px 15px 17px;
+    padding-top: 1rem;
+}
+
+.card_subscription {
+    text-align: start;
+    line-height: 2px;
+    padding-bottom: 5px;
+    
+}
+
+.card_icon {
+    float: inline-start;
+    padding-right: 1.2rem;
+    padding-left: 1rem;
+    margin-top: -2px;
+
+}
+
+.btn-link {
+    float: inline-end;
+    position: relative;
+    margin-top: -3.5rem;
+    margin-right: 8px;
+    color: var(--bright-blue);
+    font-weight: var(--fw-bold);
+}
+
+.d-grid {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    font-weight: var(--fw-bold);
+    color: var(--dark-blue);
+}
+
+.btn-white {
+    font-weight: var(--fw-bold);
+    color: var(--desaturated-blue);
+    font-size: small;
+    padding-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+.btn-primary {
+    background-color: var(--bright-blue);
+    font-weight: var(--fw-bold);
+    font-size: small;
+    margin-top: .3rem;
+    border-radius: 11px;
+    box-shadow: 0px 4px 18px hsl(245, 75%, 52%, 0.5);
+}
+
+
+@media screen and (max-height: 400px) {
+	.container {
+		height: 300px;
+	}
+	body {
+		height: auto;
+	}
+
+    main {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+
